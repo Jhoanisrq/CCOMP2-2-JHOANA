@@ -13,14 +13,14 @@ los valores de ambos objetos.
 #include <iostream>
 using namespace std;
 
-class Date {
+class date {
     private:
         int month ;
         int day ;
         int year ;
     
     public:
-        Date(int m, int d, int y) {
+        explicit date(int m, int d, int y) {
             month = (m >= 1 && m <= 12) ? m : 1; //m si es verdadero y 1 si es falso 
             day = d;
             year = y;
@@ -54,8 +54,8 @@ class Date {
     };
 
 int main() {                   // m / d / y
-    Date date1(10, 25, 2015);  // Date con un mes válido
-    Date date2(25, 8, 2024);   // Date con un mes inválido
+    date date1(10, 25, 2015);  // Date con un mes válido
+    date date2(25, 8, 2024);   // Date con un mes inválido
 
     cout << "Fecha 1: ";
     date1.displayDate();

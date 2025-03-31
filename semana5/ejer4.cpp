@@ -1,6 +1,8 @@
 /* Ejer3
 Encontrar el palindromo mas grande producto de 3 digitos 
-como 91*99 = 9009 - 2digitos  */
+como 91*99 = 9009 - 2digitos  
+
+NO acabado :/ */
 #include <iostream>
 using namespace std;
 

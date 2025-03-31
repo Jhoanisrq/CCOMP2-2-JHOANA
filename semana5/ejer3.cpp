@@ -4,20 +4,12 @@
 using namespace std;
 
 bool esPrimo(int num) {
-    for (int i = num/3 ; i < num; i++) {
-        if (num % i == 0) {
-            return false;
-        }
+    for (int i = 2 ; i < num ; i++) {          
+        if(num%i == 0){                                     
+            return false;                                   
+        }      
     }
     return true;
-}
-
-int esPrimoMayor(int num) {
-    for (int i = num - 1; i > 1; i--) {
-        if (esPrimo(i)) {
-            return i;
-        }
-    }
 }
 
 int main() {
@@ -25,8 +17,11 @@ int main() {
     cout << "Ingrese un numero: ";
     cin >> n;
     cout << endl;
-    int primoMayor = esPrimoMayor(n);
-    cout << "El mayor primo es: " << primoMayor << endl;
-
+    for (int i = n - 1; i > 1; i--) {
+        if (esPrimo(i)) {
+        cout << "El mayor primo es: " << i << endl;
+        break;
+        }
+    }
     return 0;
 }

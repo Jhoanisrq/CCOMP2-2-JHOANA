@@ -26,7 +26,7 @@ int cantidadletras(char arr[]){
 
 int main(){
     char cad[] ="p2123456#%$arangutidimicuaro";
-    cout<< "cad tiene "<< cantidadletras(cad)<< " letras"; 
+    cout<< "cad tiene "<< cantidadletras(cad)<< " letras"<<endl; 
     cout<< "cad tiene "<< cantidadletras_ptr(cad)<< " letras"; 
 
 }

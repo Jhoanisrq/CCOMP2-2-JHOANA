@@ -2,12 +2,11 @@
 
 using namespace std;
 
-int main(){
-    long x ;
-    long y ;
-     x=4 ;
-     y=2 ;
-    cout << x / y ;
-    return 0; 
+int* getPtrToFive() {
+ int x = 5;
+ return &x;
 }
- 
+int main() {
+ int *p = getPtrToFive();
+ cout << *p << endl; // ???
+}
